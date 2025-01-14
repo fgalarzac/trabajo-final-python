@@ -28,7 +28,7 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <style>
-    /* Aseguramos contraste del texto "typed" */
+    /* Contraste del texto "typed" */
     .typed {
       color: #000;
       font-weight: 700;
@@ -52,9 +52,9 @@
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="#actualidad"><img src="assets/img/actualidad-icon.webp" alt="Actualidad Icon" class="navicon"><span>Actualidad</span></a></li>
-        <li><a href="#jugadores"><img src="assets/img/jugadores-icon.png" alt="Jugadores Icon" class="navicon"><span>Jugadores destacados</span></a></li>
-        <li><a href="#palmares"><img src="assets/img/palmares-icon.png" alt="Palmarés Icon" class="navicon"><span>Palmarés</span></a></li>
+        <li><a href="#actualidad"><i class="bi bi-file-earmark-text navicon"></i><span>Actualidad</span></a></li>
+        <li><a href="#jugadores"><i class="bi bi-person navicon "></i><span>Jugadores destacados</span></a></li>
+        <li><a href="#palmares"><i class="bi bi-images navicon"></i><span>Palmarés</span></a></li>
       </ul>
     </nav>
 
@@ -71,7 +71,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-9">
             <h2>Fútbol Club Barcelona</h2>
-            <p>El mejor <span class="typed" data-typed-items="equipo del mundo, club del mundo"> </span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            <p>El mejor <span class="typed" data-typed-items="equipo del mundo, club del mundo"></span></p>
             <div class="social-links">
               <a href="https://x.com/fcbarcelona_es"><i class="bi bi-twitter-x"></i></a>
               <a href="https://www.facebook.com/fcbarcelona/"><i class="bi bi-facebook"></i></a>
@@ -130,6 +130,19 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
+  <!-- Configuración para Typed.js (efecto del subtítulo)-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new Typed(".typed", {
+        strings: ["equipo del mundo", "club del mundo"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        backDelay: 2000,
+        loop: true,
+      });
+    });
+  </script>
+  
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
